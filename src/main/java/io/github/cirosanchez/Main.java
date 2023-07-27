@@ -3,6 +3,7 @@ package io.github.cirosanchez;
 
 import io.github.cirosanchez.cmd.SpecialCommand;
 import io.github.cirosanchez.cmd.TicketCommand;
+import io.github.cirosanchez.listeners.ButtonListener;
 import io.github.cirosanchez.listeners.MessageListener;
 import io.github.cirosanchez.token.TokenJSON;
 
@@ -41,7 +42,9 @@ public class Main {
         api.addListener(new MessageListener());
         api.addListener(new SpecialCommand(api));
         api.addListener(new TicketCommand(api));
-
+        api.addListener(new ButtonListener());
         
+
+
     }
 }
