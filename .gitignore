@@ -2,3 +2,5 @@ src/main/java/io/github/cirosanchez/token
 bin/main/io/github/cirosanchez/token/token.json
 bin/main/io/github/cirosanchez/token/token.json
 src/main/java/io/github/cirosanchez/cmd/SpecialCommand.java
+bin/main/io/github/cirosanchez/cmd/SpecialCommand.class
+src/main/java/io/github/cirosanchez/cmd/SpecialCommand.java

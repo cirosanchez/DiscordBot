@@ -14,6 +14,7 @@ public class SpecialCommand implements SlashCommandCreateListener {
     }
 
     // im not gay are u?
+    // bro
 
     @Override
     public void onSlashCommandCreate(SlashCommandCreateEvent event) {
