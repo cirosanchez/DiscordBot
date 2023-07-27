@@ -1,6 +1,8 @@
 package io.github.cirosanchez;
 
 
+import io.github.cirosanchez.cmd.SpecialCommand;
+import io.github.cirosanchez.cmd.TicketCommand;
 import io.github.cirosanchez.listeners.MessageListener;
 import io.github.cirosanchez.token.TokenJSON;
 
@@ -10,10 +12,13 @@ import org.javacord.api.DiscordApi;
 import org.javacord.api.DiscordApiBuilder;
 import org.javacord.api.entity.activity.ActivityType;
 import org.javacord.api.entity.server.Server;
+import org.javacord.api.interaction.SlashCommand;
 import org.json.simple.parser.ParseException;
 
 public class Main {
     public static void main(String[] args) {
+
+
         DiscordApi api = null;
 
 
@@ -34,6 +39,9 @@ public class Main {
         System.out.println(" ");
         System.out.println(" Invite: " +api.createBotInvite());
         api.addListener(new MessageListener());
+        api.addListener(new SpecialCommand(api));
+        api.addListener(new TicketCommand(api));
 
+        
     }
 }
