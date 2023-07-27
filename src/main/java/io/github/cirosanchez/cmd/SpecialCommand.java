@@ -13,6 +13,8 @@ public class SpecialCommand implements SlashCommandCreateListener {
         SlashCommand cmd = SlashCommand.with("mapis", "demuestra lo mucho q quiero a mapis").createForServer(api, 1027394040951488554L).join();
     }
 
+    // im not gay are u?
+
     @Override
     public void onSlashCommandCreate(SlashCommandCreateEvent event) {
         if (event.getSlashCommandInteraction().getCommandName().equals("mapis")){

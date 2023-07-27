@@ -1,5 +1,4 @@
 src/main/java/io/github/cirosanchez/token
-src/main/java/io/github/cirosanchez/cmd/TicketCommand.java
-bin/main/io/github/cirosanchez/cmd/TicketCommand.class
 bin/main/io/github/cirosanchez/token/token.json
 bin/main/io/github/cirosanchez/token/token.json
+src/main/java/io/github/cirosanchez/cmd/SpecialCommand.java
